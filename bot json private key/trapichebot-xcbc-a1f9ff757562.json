@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "trapichebot-xcbc",
+  "private_key_id": "a1f9ff757562f5618b175cb08f57068c1754c536",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCUaSuGFNh1qYlA\n3EqC0MJdJ8ly3MuUhny37MDwqwDmPst/aKcCYByn6TmZIAtB4y0cy9hU7+YIoHT9\nUNfzNVYXM66x8KVFQjFFIJS00s5U/E8yUs9vGaCxz9sBGZjRYinC3kAIFahb/aQy\nnKKTWfP6eqkeJ6QXaEGT3NfGSdMVnHgq+8QlfBqvJlDje6W/cYQmY7fWBGMjE3h/\n3IHsMCMTBDQXrNsMvepyl5cQtezq80k1FQ0zSOISSP7ASEt+602LBMqZY+qDAWoo\nmve0VyLEPWdKtGy+daNGCkb7P2wZcCASoj+NN/CN3dnGgXUPKL9qoEskbJU/JW8g\nR6p3sS13AgMBAAECggEAGEH4czoFB3ZmkMtxAmDM5B0UuEmOnQA+cnGoN647v2aU\nLIcWhTTgejGM0JKERIi1XveSrI9psg9ID/+ezInzQGeaLkt/OArRstLYe5XZU9rJ\ntxgB/87YjTfEPDHK4K6C1O8u2CNyGVcj94HSsPMLBe32po8kKw9HaLu4KRj3/5gL\n1vCN/+GC3KVifHLWNK0Ee9gspMojPNZ6gRpcCP/wQWpACp4hCBpSrbxKI+LZsuMe\nqUCjTpOYfW+naQWxZKE1ABAAcAv51XAHK665X3hYBOyXT6O0KYFKwR1kc9EcWrwp\nSjDB9USsqmWwMlJHvB8xwBK2Vxv8GpvsM+BymmMpQQKBgQDO58YRCB/GvEb8maHQ\n67q2j3bWVclPzqmicSraSkjGhzLX4kQRAERsZZ+CsQn3QJZ6es4ACVfTAqo+C2k4\n+JYZjyT4rLjXAPrB6cjjjTRehSlBQVeCEoxXAr56V/CwYphi+09odNYRlIq6O8fD\noIYSaxbywKgjDhXSjILe6za6fQKBgQC3oDaJndmubKckEL/1Jjriym9CUHaIvkpO\nUwXYfwM+sEZVBLND4JzLq97YhyDVN7ng+iahvDnsbnIXG2rFzZVnMRiXOpE4kIMC\nlqA/yWm1lxsfDX89VMpqOMb7cy/BvYWffxbmPwjsMCOlkGbcGuvCnrBiq5kpMQ9y\n5zTeBrNWAwKBgQC6D/Wu5UZmGnQfviylSwcaGwN8FaM2UJt9yBUIPpsZZQVU3FXn\nj/z4GZ8LERfsMDniJMNRhxViXVgo+WwDXpDkpTRTKEgEmQ3nCcyszROWGFuUIiWG\nhBWOPZp7PM/mXpO5F1Q+lCrZnmHuvcmT46wNrh3x6UyKUaVQNSmPO6h4pQKBgFpX\n5P1IQHVk18cSxp7itE4osxy5YdhdZ0mp51JhC0OojrH9ogVfWUWLxhRaR3kf9cAO\n0zr31LfSjyd3Qc0YHM2shiDBm/lsgEihuy4m9m91bM6WYWfXc89XJ+9G+NQlXrze\nVnHpyYYLGT64ESNxy1Txpm6lZrGxhZxOzOAAA/PpAn8dEzw8qLwBHYkl4Dm8tmT7\nJEHJ5Kd3hkYMyT3i6QkQGCQnpAjWuckqNaXNCzw6XOmm5cqUOpI51IqqjIfW/0ii\nUR5iXvGvkxksNTQpjxGDyk6R1yyZs+rDl8Fx6d+SVLQddBn+pb2kTjMq0GGCgMlx\nC0uhiB0fGY/r8xsl1qK5\n-----END PRIVATE KEY-----\n",
+  "client_email": "trapichebot@trapichebot-xcbc.iam.gserviceaccount.com",
+  "client_id": "115408699837394558166",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/trapichebot%40trapichebot-xcbc.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
