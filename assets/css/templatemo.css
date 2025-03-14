@@ -26,6 +26,18 @@ Table of contents
 --------------------------------------------- */
 
 
+/*color as a variable*/
+:root {
+  --primary-color: #302783 ;
+  --secondary-color: #E42314; 
+  --light-color: #cfd6e1;
+  --dark-color: #1d242d;
+  --black-color: #000;
+  --white-color: #fff;
+  --success-color: #59ab6e;
+  --warning-color: #ede861;
+}
+
 
 
 /* Typography */
@@ -52,14 +64,15 @@ body, ul, li, p, a, label, input, div {
 .logo { font-weight: 500 !important;}
 .text-warning {  color: #ede861 !important;}
 .text-muted { color: #bcbcbc !important;}
-.text-success { color: #59ab6e !important;}
+.text-success { color: var(--white-color)!important;}
 .text-light { color: #cfd6e1 !important;}
-.bg-dark { background-color: #212934 !important;}
+.bg-dark { background-color: var(--primary-color) !important;}
+.bg-red{ background-color: var(--secondary-color) !important;}
 .bg-light { background-color: #e9eef5 !important;}
 .bg-black { background-color: #1d242d !important;}
-.bg-success { background-color: #59ab6e !important;}
+.bg-success { background-color:var(--primary-color)!important;}
 .btn-success {
-  background-color: #59ab6e !important;
+  background-color: var(--primary-color) !important;
   border-color: #56ae6c !important;
 }
 .pagination .page-link:hover {color: #000;}
@@ -121,7 +134,7 @@ body, ul, li, p, a, label, input, div {
 }
 #template-mo-zay-hero-carousel .carousel-control-next i,
 #template-mo-zay-hero-carousel .carousel-control-prev i {
-  color: #59ab6e !important;
+  color: var(--primary-color) !important;
   font-size: 2.8em !important;
 }
 /* Carousel Brand */
