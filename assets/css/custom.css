@@ -1,3 +1,58 @@
 /*
 Custom Css
 */
+
+/* Efectos de brillo para cards */
+.shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.4) 50%,rgba(255,255,255,0) 100%);
+    pointer-events: none;
+    transform: translateZ(0);
+}
+
+/* Animación de letras */
+.letter-animation {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto de botones */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.circle-effect {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    transform: scale(0);
+    animation: ripple 0.5s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Efecto Parallax */
+.img-fluid {
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+}
