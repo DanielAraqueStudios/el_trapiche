@@ -84,6 +84,26 @@ body, ul, li, p, a, label, input, div {
   text-shadow: none !important;
 }
 
+/* Semi-transparent background for better text readability */
+.container:not(footer .container):not(footer .container-fluid):not(nav .container):not(nav .container-fluid):not(.bg-success .container):not(.bg-dark .container), 
+.container-fluid:not(footer .container-fluid):not(nav .container-fluid):not(.bg-success .container-fluid):not(.bg-dark .container-fluid), 
+section:not(.bg-success):not(.bg-dark):not(.bg-light):not(footer):not(nav), 
+article, 
+.row:not(footer .row):not(nav .row):not(.bg-success .row):not(.bg-dark .row) {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Ensure footer, navbar, bg-light sections and bg-success/bg-dark containers don't get the transparent background */
+footer, footer *, footer .container, footer .container-fluid, footer .row,
+nav, nav *, nav .container, nav .container-fluid, nav .row,
+.bg-light, .bg-light *,
+.bg-success .container, .bg-success .container-fluid, .bg-success .row, .bg-success *,
+.bg-dark .container, .bg-dark .container-fluid, .bg-dark .row, .bg-dark * {
+  background-color: transparent !important;
+}
+
 .h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 48px !important;
