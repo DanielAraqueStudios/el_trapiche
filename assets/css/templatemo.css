@@ -100,8 +100,15 @@ footer, footer *, footer .container, footer .container-fluid, footer .row,
 nav, nav *, nav .container, nav .container-fluid, nav .row,
 .bg-light, .bg-light *,
 .bg-success .container, .bg-success .container-fluid, .bg-success .row, .bg-success *,
-.bg-dark .container, .bg-dark .container-fluid, .bg-dark .row, .bg-dark * {
+.bg-dark .container, .bg-dark .container-fluid, .bg-dark .row, .bg-dark *,
+.float {
   background-color: transparent !important;
+}
+
+/* WhatsApp floating button - ensure it stays green and on top */
+.float {
+  background-color: #25d366 !important;
+  z-index: 9999 !important;
 }
 
 .h1 {
