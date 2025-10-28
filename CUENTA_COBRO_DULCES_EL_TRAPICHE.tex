@@ -1,0 +1,341 @@
+% ====================================================================
+% CUENTA DE COBRO - PRESTACIÓN DE SERVICIOS PROFESIONALES
+% Germán García Pérez
+% ====================================================================
+
+\documentclass[12pt,letterpaper]{article}
+
+% Paquetes necesarios
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{eurosym}
+\usepackage{siunitx}
+\usepackage{colortbl}
+\usepackage{xcolor}
+
+% Configuración de números
+\sisetup{
+    group-separator = {.},
+    group-minimum-digits = 3,
+    output-decimal-marker = {,}
+}
+
+% Configuración de encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textbf{CUENTA DE COBRO}}
+\fancyhead[R]{\small No. \underline{\hspace{3cm}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Configuración de espaciado
+\setstretch{1.15}
+
+% Colores personalizados
+\definecolor{headercolor}{RGB}{41, 128, 185}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+
+\begin{document}
+
+% ====================================================================
+% ENCABEZADO DEL DOCUMENTO
+% ====================================================================
+
+\begin{center}
+    \textbf{\LARGE CUENTA DE COBRO}\\[0.3cm]
+    \textbf{\large PRESTACIÓN DE SERVICIOS PROFESIONALES}\\[0.5cm]
+    \hrule
+    \vspace{0.3cm}
+\end{center}
+
+% ====================================================================
+% INFORMACIÓN DEL PRESTADOR
+% ====================================================================
+
+\section*{INFORMACIÓN DEL PRESTADOR DE SERVICIOS}
+
+\noindent
+\begin{tabular}{p{5cm}p{10cm}}
+\textbf{Nombre Completo:} & Germán García Pérez \\[0.2cm]
+\textbf{Cédula de Ciudadanía:} & 79.155.480 \\[0.2cm]
+\textbf{Dirección:} & Carrera 40 \# 71 Sur-15, Sabaneta, Antioquia \\[0.2cm]
+\textbf{Teléfono/Celular:} & (301) 445.2817 \\[0.2cm]
+\textbf{Correo Electrónico:} & \underline{\hspace{5cm}} \\[0.2cm]
+\end{tabular}
+
+\vspace{0.5cm}
+
+% ====================================================================
+% INFORMACIÓN DEL CONTRATANTE
+% ====================================================================
+
+\section*{INFORMACIÓN DEL CONTRATANTE}
+
+\noindent
+\begin{tabular}{p{5cm}p{10cm}}
+\textbf{Razón Social:} & Dulces El Trapiche S.A.S \\[0.2cm]
+\textbf{NIT:} & 890.932.227-3 \\[0.2cm]
+\textbf{Representante Legal:} & Edison Andrés Serna Quintero \\[0.2cm]
+\textbf{Cédula de Ciudadanía:} & 8.106.027 \\[0.2cm]
+\textbf{Dirección:} & Cra. 51 \# 95A Sur -13, La Estrella, Antioquia \\[0.2cm]
+\textbf{Teléfono:} & (604) 444-2552 / (301) 692-6792 \\[0.2cm]
+\end{tabular}
+
+\vspace{0.5cm}
+
+% ====================================================================
+% INFORMACIÓN DE LA CUENTA
+% ====================================================================
+
+\section*{DATOS DE LA CUENTA DE COBRO}
+
+\noindent
+\begin{tabular}{p{5cm}p{10cm}}
+\textbf{Número de Cuenta:} & 001 \\[0.2cm]
+\textbf{Fecha de Emisión:} & \today \\[0.2cm]
+\textbf{Lugar de Emisión:} & Sabaneta, Antioquia \\[0.2cm]
+
+\textbf{Contrato de Referencia:} & Contrato Civil de Prestación de Servicios del 14 de enero de 2025 \\[0.2cm]
+\end{tabular}
+
+\vspace{0.5cm}
+
+% ====================================================================
+% CONCEPTO Y DESCRIPCIÓN DE SERVICIOS
+% ====================================================================
+
+\section*{CONCEPTO Y DESCRIPCIÓN DE SERVICIOS PRESTADOS}
+
+Por concepto de servicios profesionales prestados durante el período indicado, correspondientes al Contrato Civil de Prestación de Servicios suscrito entre las partes, relaciono los siguientes servicios:
+
+\vspace{0.3cm}
+
+\noindent
+\textbf{NOTA:} La presente cuenta de cobro corresponde al saldo pendiente de pago del contrato. Se han realizado pagos parciales por un valor de \textbf{\$ \num{4224400}} (Cuatro millones doscientos veinticuatro mil cuatrocientos pesos M/Cte).
+
+\vspace{0.5cm}
+
+% Tabla de servicios
+\begin{center}
+\begin{longtable}{|p{0.8cm}|p{8cm}|r|r|}
+\hline
+\rowcolor{headercolor}
+\textcolor{white}{\textbf{Item}} & 
+\textcolor{white}{\textbf{Descripción del Servicio}} & 
+\textcolor{white}{\textbf{Cant.}} & 
+\textcolor{white}{\textbf{Valor (COP)}} \\
+\hline
+\endfirsthead
+
+\hline
+\rowcolor{headercolor}
+\textcolor{white}{\textbf{Item}} & 
+\textcolor{white}{\textbf{Descripción del Servicio}} & 
+\textcolor{white}{\textbf{Cant.}} & 
+\textcolor{white}{\textbf{Valor (COP)}} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+1 & 
+\textbf{Desarrollo de Página Web a Medida con Comercio Electrónico} \newline
+\small{
+• Diseño y desarrollo web responsive \newline
+• Integración de sistema de comercio electrónico \newline
+• Catálogo de productos con gestión de imágenes \newline
+• Sistema de carrito de compras y checkout \newline
+• Panel administrativo CMS \newline
+• Optimización SEO y configuración de seguridad \newline
+• Integración con pasarelas de pago \newline
+• Manual de usuario y documentación técnica
+} & 
+1 & 
+\$ \num{4840400} \\
+\hline
+
+2 & 
+\textbf{Implementación de Bot de WhatsApp} \newline
+\small{
+• Desarrollo de bot automatizado para WhatsApp Business \newline
+• Configuración de respuestas automáticas personalizadas \newline
+• Flujos conversacionales para atención al cliente \newline
+• Integración con base de datos de productos \newline
+• Panel de administración y estadísticas \newline
+• Capacitación al personal \newline
+• Documentación técnica y manual de operación
+} & 
+1 & 
+\$ \num{2200000} \\
+\hline
+
+\multicolumn{3}{|r|}{\textbf{SUBTOTAL SERVICIOS:}} & \textbf{\$ \num{7040400}} \\
+\hline
+
+\end{longtable}
+\end{center}
+
+\vspace{0.3cm}
+
+% ====================================================================
+% CÁLCULOS Y TOTALES
+% ====================================================================
+
+\section*{LIQUIDACIÓN}
+
+\begin{center}
+\begin{tabular}{|p{10cm}|r|}
+\hline
+\rowcolor{lightgray}
+\textbf{CONCEPTO} & \textbf{VALOR (COP)} \\
+\hline
+\textbf{Valor Total del Contrato} & \$ \num{7040400} \\
+\hline
+\textbf{Menos: Pagos Parciales Realizados} & (\$ \num{4224400}) \\
+\hline
+\rowcolor{lightgray}
+\textbf{Subtotal Saldo Pendiente} & \textbf{\$ \num{2816000}} \\
+\hline
+\textbf{Retención en la Fuente} (Si aplica) & \$ \underline{\hspace{3cm}} \\
+\hline
+\textbf{Otras Deducciones} (Si aplica) & \$ \underline{\hspace{3cm}} \\
+\hline
+\rowcolor{headercolor}
+\textcolor{white}{\textbf{TOTAL A PAGAR}} & \textcolor{white}{\textbf{\$ \num{2816000}}} \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent
+\textbf{VALOR EN LETRAS:} DOS MILLONES OCHOCIENTOS DIECISÉIS MIL PESOS M/CTE.
+
+\vspace{0.5cm}
+
+% ====================================================================
+% NOTA SOBRE RETENCIÓN
+% ====================================================================
+
+\section*{NOTA IMPORTANTE}
+
+\begin{itemize}[leftmargin=*,itemsep=0.2cm]
+    \item El CONTRATANTE ha realizado pagos parciales por un valor total de \textbf{\$ 4.224.400} (Cuatro millones doscientos veinticuatro mil cuatrocientos pesos M/Cte), correspondientes a los avances del proyecto.
+    
+    \item El presente cobro corresponde al \textbf{saldo final pendiente} de \textbf{\$ 2.816.000} (Dos millones ochocientos dieciséis mil pesos M/Cte) por la finalización y entrega total de los servicios contratados.
+    
+    \item Según lo establecido en la Cláusula Décima Segunda del contrato, el CONTRATANTE se obliga a cancelar el valor resultante por concepto de retención en la fuente que le corresponda declarar y pagar al CONTRATISTA, por valores superiores a \$ 1.344.573.
+    
+    \item El presente cobro corresponde a servicios profesionales independientes prestados en virtud del Contrato Civil de Prestación de Servicios suscrito el 14 de enero de 2025.
+    
+    \item No existe relación laboral entre las partes, según lo establecido en la Cláusula Séptima del contrato de referencia.
+\end{itemize}
+
+\vspace{0.5cm}
+
+% ====================================================================
+% INFORMACIÓN BANCARIA
+% ====================================================================
+
+\section*{INFORMACIÓN PARA PAGO}
+
+\noindent
+\textbf{Forma de Pago Solicitada:} Transferencia Bancaria / Consignación
+
+\vspace{0.3cm}
+
+\noindent
+\begin{tabular}{p{5cm}p{10cm}}
+\textbf{Entidad Bancaria:} & Bancolombia \\[0.2cm]
+\textbf{Tipo de Cuenta:} & Cuenta de Ahorros \\[0.2cm]
+\textbf{Número de Cuenta:} & 912-381559-89 \\[0.2cm]
+\textbf{Titular:} & Daniel García Araque \\[0.2cm]
+\textbf{Cédula del Titular:} & 1.000.718.485 \\[0.2cm]
+\end{tabular}
+
+\vspace{0.5cm}
+
+% ====================================================================
+% DECLARACIÓN
+% ====================================================================
+
+\section*{DECLARACIÓN}
+
+Yo, \textbf{GERMÁN GARCÍA PÉREZ}, identificado con cédula de ciudadanía No. 79.155.480, declaro bajo la gravedad del juramento:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2cm]
+    \item Que los servicios relacionados en la presente cuenta de cobro fueron efectivamente prestados durante el período indicado.
+    
+    \item Que los valores aquí registrados corresponden fielmente a lo acordado en el Contrato Civil de Prestación de Servicios suscrito con Dulces El Trapiche S.A.S.
+    
+    \item Que no tengo vinculación laboral con la empresa contratante y que actúo como prestador independiente de servicios profesionales.
+    
+    \item Que la información bancaria suministrada es correcta y corresponde a una cuenta activa para recibir el pago.
+    
+    \item Que he cumplido con todas las obligaciones contractuales establecidas en el contrato de referencia.
+\end{enumerate}
+
+\vspace{1cm}
+
+% ====================================================================
+% FIRMAS
+% ====================================================================
+
+\noindent
+\textbf{Observaciones adicionales:}
+
+\vspace{1cm}
+\hrule
+\vspace{2cm}
+
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \rule{6cm}{0.5pt}\\
+    \textbf{GERMÁN GARCÍA PÉREZ}\\
+    Prestador de Servicios\\
+    C.C.: 79.155.480\\[0.2cm]
+    Fecha: \underline{\hspace{4cm}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \rule{6cm}{0.5pt}\\
+    \textbf{RECIBIDO POR}\\
+    Dulces El Trapiche S.A.S\\
+    Nombre: \underline{\hspace{4cm}}\\
+    Cargo: \underline{\hspace{4cm}}\\
+    Fecha: \underline{\hspace{4cm}}
+\end{minipage}
+
+\vspace{1cm}
+
+% ====================================================================
+% PIE DE PÁGINA
+% ====================================================================
+
+\begin{center}
+    \hrule
+    \vspace{0.2cm}
+    \small
+    \textit{Esta cuenta de cobro es un documento válido para efectos de pago de servicios profesionales}\\
+    \textit{y debe conservarse como soporte contable y fiscal según la normatividad vigente.}\\
+    \vspace{0.1cm}
+    \textbf{Original:} Cliente --- \textbf{Copia:} Prestador de Servicios
+\end{center}
+
+\end{document}
