@@ -1,0 +1,20 @@
+# Archivos grandes
+*.zip
+v6.zip
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+LOGS/
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Documentos personales
+*.docx
+*.pdf
+bot json private key/
