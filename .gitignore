@@ -1,6 +1,7 @@
 # Archivos grandes
 *.zip
 v6.zip
+V6.zip
 
 # Archivos de sistema
 .DS_Store
