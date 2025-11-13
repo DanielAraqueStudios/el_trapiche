@@ -84,9 +84,30 @@
     </nav>
     <!-- Close Top Nav -->
 
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span class="menu-text">MENÚ</span>
+    </div>
+
+    <!-- Fullscreen Navigation Overlay -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <nav class="fullscreen-nav">
+            <a href="index.html" class="menu-link">Inicio</a>
+            <a href="nosotros.html" class="menu-link">Nosotros</a>
+            <a href="https://www.dulceseltrapiche.com/tienda/" class="menu-link">Productos</a>
+            <a href="blog.html" class="menu-link">Blog</a>
+            <a href="contacto.html" class="menu-link">Contacto</a>
+        </nav>
+    </div>
+
     
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <nav class="navbar navbar-expand-lg navbar-light shadow" style="display: none;">
         <div class="container d-flex justify-content-between align-items-center">
     
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
@@ -336,7 +357,10 @@
         <div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
-                    <div class="col-12">
+                    <div class="col-md-6 text-start">
+                        <img src="assets/img/co-colombia.png" alt="CO Colombia" style="max-width: 120px; opacity: 0.8;">
+                    </div>
+                    <div class="col-md-6">
                         <p class="text-center text-light">
                             Copyright &copy; 2025 Dulces El Trapiche - Todos los derechos reservados
                         </p>
@@ -354,6 +378,17 @@
     <script src="assets/js/bootstrap.bundle.min.js?v=2.0"></script>
     <script src="assets/js/templatemo.js?v=2.0"></script>
     <script src="assets/js/custom.js?v=2.0"></script>
+    
+    <script>
+        // Menu toggle functionality
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const fullscreenMenu = document.getElementById('fullscreenMenu');
+
+        hamburgerMenu.addEventListener('click', function() {
+            fullscreenMenu.classList.toggle('active');
+            hamburgerMenu.classList.toggle('active');
+        });
+    </script>
     <!-- End Script -->
 </body>
 

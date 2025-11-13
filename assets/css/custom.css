@@ -2,6 +2,13 @@
 Custom Css - Nueva Tipografía y Paleta de Colores
 */
 
+/* Eliminación global de bordes de texto */
+* {
+    text-shadow: none !important;
+    -webkit-text-stroke: 0 !important;
+    -webkit-text-stroke-width: 0 !important;
+}
+
 /* ========================================
    HAMBURGER MENU
    ======================================== */
@@ -11,46 +18,66 @@ Custom Css - Nueva Tipografía y Paleta de Colores
     position: fixed;
     top: 30px;
     left: 30px;
-    width: 50px;
-    height: 50px;
-    background-color: #b32f1e;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #b32f1e !important;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
     z-index: 10001;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    padding: 10px;
+    padding: 15px 20px;
+    border-radius: 8px !important;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
 }
 
 .hamburger-menu:hover {
-    background-color: #8a2416;
     transform: scale(1.05);
+    background: #8b2416 !important;
 }
 
-.hamburger-menu span {
+.hamburger-icon {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-icon span {
     display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff;
+    height: 4px;
+    width: 100%;
+    background: white;
     border-radius: 2px;
     transition: all 0.3s ease;
 }
 
-.hamburger-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+.menu-text {
+    color: white;
+    font-family: 'ANTON', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
-.hamburger-menu.active span:nth-child(2) {
+.hamburger-menu.active .hamburger-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+    background-color: #ffffff;
+}
+
+.hamburger-menu.active .hamburger-icon span:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger-menu.active span:nth-child(3) {
+.hamburger-menu.active .hamburger-icon span:nth-child(3) {
     transform: rotate(-45deg) translate(8px, -8px);
+    background-color: #ffffff;
+}
+
+.hamburger-menu.active .menu-text {
+    color: #ffffff;
 }
 
 /* Fullscreen Menu Overlay */
@@ -60,7 +87,7 @@ Custom Css - Nueva Tipografía y Paleta de Colores
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #354a61;
+    background: linear-gradient(135deg, #354a61 0%, rgba(53, 74, 97, 0) 100%);
     z-index: 10000;
     display: flex;
     justify-content: center;
@@ -85,13 +112,18 @@ Custom Css - Nueva Tipografía y Paleta de Colores
 .menu-link {
     font-family: 'Anton', sans-serif !important;
     font-size: 48px;
+    font-weight: 400 !important;
     color: #ffffff !important;
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: all 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
+    border: none !important;
+    outline: none !important;
+    -webkit-text-stroke: 0 !important;
+    text-shadow: none !important;
 }
 
 .fullscreen-menu.active .menu-link {
@@ -118,6 +150,34 @@ Custom Css - Nueva Tipografía y Paleta de Colores
 .menu-link:hover {
     color: #fcd0c2 !important;
     transform: scale(1.1);
+}
+
+/* ========================================
+   REMOVE BORDERS
+   ======================================== */
+
+* {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.border,
+.border-bottom,
+.border-top,
+.border-left,
+.border-right,
+.border-light,
+.border-dark,
+.rounded,
+.rounded-circle,
+img.rounded,
+.shadow,
+.shadow-sm,
+.shadow-lg {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
 /* ========================================
@@ -225,10 +285,55 @@ body, p, span, a, li, td, th, label, input, textarea, select, button {
 /* Enlaces */
 a {
     color: #b32f1e;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #8f2618;
+    color: #354a61;
+}
+
+/* ========================================
+   CAROUSEL FULLSCREEN
+   ======================================== */
+
+.carousel-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+#template-mo-zay-hero-carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+/* ========================================
+   LAYOUT FULLSCREEN
+   ======================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: 0;
 }
 
 /* Navbar */

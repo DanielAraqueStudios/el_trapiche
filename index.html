@@ -55,46 +55,20 @@
 
 <body>
     
-    <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-red navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:servicioalcliente@dulceseltrapiche.com">servicioalcliente@dulceseltrapiche.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:6044442552">(604) 444-2552</a>
-                    <i class="fa fa-mobile mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:3016926792">(301) 692-6792</a>
-                </div>
-                <div>
-                    <a class="text-light" href="https://www.facebook.com/share/15SQSwmcQt/?mibextid=wwXIfr" target="_blank" rel="noopener">
-                        <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
-                    </a>
-                    <a class="text-light" href="https://www.instagram.com/panela_eltrapiche?igsh=MXFrN2dnMmNkajc0dg%3D%3D&utm_source=qr/" target="_blank" rel="noopener">
-                        <i class="fab fa-instagram fa-sm fa-fw me-2"></i>
-                    </a>
-                    <a class="text-light" href="https://wa.me/573016926792" target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp fa-sm fa-fw me-2"></i>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Close Top Nav -->
-
-    
     <!-- Hamburger Menu Button -->
     <button class="hamburger-menu" id="menuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span class="menu-text">MENÚ</span>
     </button>
 
     <!-- Fullscreen Navigation Overlay -->
     <div class="fullscreen-menu" id="fullscreenMenu">
         <nav class="fullscreen-nav">
+            <a href="index.html" class="menu-link">Inicio</a>
             <a href="nosotros.html" class="menu-link">Nosotros</a>
             <a href="https://www.dulceseltrapiche.com/tienda/" class="menu-link">Productos</a>
             <a href="blog.html" class="menu-link">Blog</a>
@@ -121,85 +95,35 @@
 
 
     <!-- Start Banner Hero -->
-    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
-        </ol>
+    <div id="template-mo-zay-hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last mb-5">
-                            <img class="img-fluid px-5" src="./assets/img/new/IMG_2904~2.jpg" alt="Productos de panela El Trapiche">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left align-self-center px-5">
-                                <h1 class="h1 text-dark mb-4 fade-up"><b>Dulces</b> El Trapiche</h1>
-                                <h3 class="h2 mb-4 fade-up">Tradición dulce desde 1982</h3> 
-                                <p class="mt-4">
-                                    Descubre nuestra deliciosa variedad de productos artesanales 
-                                    elaborados con panela 100% natural.<br><br> Más de 40 años endulzando 
-                                    hogares colombianos con calidad y tradición.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <img src="./assets/img/new/IMG_2904~2.jpg" class="d-block w-100 carousel-fullscreen" alt="Productos El Trapiche">
             </div>
             <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last mb-5">
-                            <img class="img-fluid px-5" src="./assets/img/new/IMG_2881~2.jpg" alt="Variedad de productos El Trapiche">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left">
-                                <h1 class="h1">Productos Naturales</h1>
-                                <h3 class="h2">Sabor y calidad garantizada</h3>
-                                <p>
-                                    Ofrecemos una amplia gama de productos derivados de la panela,
-                                    elaborados con los más altos estándares de calidad y el sabor
-                                    auténtico de nuestra tierra.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <img src="./assets/img/new/IMG_2881~2.jpg" class="d-block w-100 carousel-fullscreen" alt="Variedad de productos">
             </div>
             <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/new/IMG_2598~2.JPG" alt="Fábrica El Trapiche">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left">
-                                <h1 class="h1">Innovación y Tradición</h1>
-                                <h3 class="h2">Tecnología al servicio del sabor</h3>
-                                <p>
-                                    Combinamos métodos tradicionales con tecnología moderna para 
-                                    garantizar productos de la más alta calidad, manteniendo el 
-                                    sabor auténtico que nos caracteriza.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <img src="./assets/img/new/IMG_2844.JPG" class="d-block w-100 carousel-fullscreen" alt="Panela tradicional">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/new/IMG_2598~2.JPG" class="d-block w-100 carousel-fullscreen" alt="Fábrica El Trapiche">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/new/IMG_2885.jpg" class="d-block w-100 carousel-fullscreen" alt="Dulces artesanales">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/new/azucar.JPG" class="d-block w-100 carousel-fullscreen" alt="Cubos de azúcar">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/new/IMG_2714~2.JPG" class="d-block w-100 carousel-fullscreen" alt="Cubos de panela">
             </div>
         </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-        </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
-            <i class="fas fa-chevron-right"></i>
-        </a>
     </div>
     <!-- End Banner Hero -->
+<!--
 
-
-    <!-- Start Categorías Destacadas -->
+    
     <section class="container py-5">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
@@ -228,9 +152,9 @@
             </div>
         </div>
     </section>
-    <!-- End Categorías Destacadas -->
+   
 
-    <!-- Start Productos Destacados -->
+   
     <section class="bg-light">
         <div class="container py-5">
             <div class="row text-center py-3">
@@ -318,9 +242,7 @@
             </div>
         </div>
     </section>
-    <!-- End Productos Destacados -->
-
-    <!-- Start footer -->
+ 
 
     
 
@@ -339,18 +261,24 @@
     </div>
 
     
-    <!-- Start Footer -->
+     Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Dulces El Trapiche</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Dirección</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li>
+                        <li style="color: #ffffff;">
                             <i class="fas fa-map-marker-alt fa-fw"></i>
                             Cra. 51 #95A SUR 13, La Estrella, Antioquia
                         </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Teléfonos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
                             <a class="text-decoration-none" href="tel:6044442552">(604) 444-2552</a>
@@ -359,35 +287,29 @@
                             <i class="fa fa-mobile fa-fw"></i>
                             <a class="text-decoration-none" href="tel:3016926792">(301) 692-6792</a>
                         </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Correo</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:servicioalcliente@dulceseltrapiche.com">servicioalcliente@dulceseltrapiche.com</a>
+                            <a class="text-decoration-none" href="mailto:servicioalcliente@dulceseltrapiche.com">Servicio al Cliente: servicioalcliente@dulceseltrapiche.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:servicioalcliente@dulceseltrapiche.com">Información: servicioalcliente@dulceseltrapiche.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:Facturacion@dulceseltrapiche.com">Facturación: Facturacion@dulceseltrapiche.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:Cartera@dulceseltrapiche.com">Cartera: Cartera@dulceseltrapiche.com</a>
                         </li>
                     </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Panela Pulverizada</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Dulces Tradicionales</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Panela en Bloque</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Nuevos Productos</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Ofertas Especiales</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Pedidos al Por Mayor</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Información</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="index.html">Inicio</a></li>
-                        <li><a class="text-decoration-none" href="nosotros.html">Nosotros</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Productos</a></li>
-                        <li><a class="text-decoration-none" href="blog.html">Blog</a></li>
-                        <li><a class="text-decoration-none" href="contacto.html">Contacto</a></li>
-                    </ul>
-                    
                 </div>
 
             </div>
@@ -396,28 +318,16 @@
                 <div class="col-12 mb-3">
                     <div class="w-100 my-3 border-top border-light"></div>
                 </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/share/15SQSwmcQt/?mibextid=wwXIfr"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/panela_eltrapiche?igsh=MXFrN2dnMmNkajc0dg%3D%3D&utm_source=qr/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://wa.me/573016926792"><i class="fab fa-whatsapp fa-lg fa-fw"></i></a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
             </div>
         </div>
 
         <div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
-                    <div class="col-12">
+                    <div class="col-md-6 text-start">
+                        <img src="assets/img/co-colombia.png" alt="CO Colombia" style="max-width: 120px; opacity: 0.8;">
+                    </div>
+                    <div class="col-md-6">
                         <p class="text-center text-light">
                             Copyright &copy; 2025 Dulces El Trapiche - Todos los derechos reservados
                         </p>
@@ -429,39 +339,81 @@
 
         
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://wa.me/573016926792" class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-    </a>
+    
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://www.dulceseltrapiche.com/tienda/carrito/" class="float-btn float-cart" target="_blank">
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <a href="https://www.facebook.com/share/15SQSwmcQt/?mibextid=wwXIfr" class="float-btn float-facebook" target="_blank">
+            <i class="fa fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/panela_eltrapiche?igsh=MXFrN2dnMmNkajc0dg%3D%3D&utm_source=qr/" class="float-btn float-instagram" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/573016926792" class="float-btn float-whatsapp" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
   
   <style>
-  .float{
+  .floating-buttons {
     position: fixed;
-    width: 60px;
-    height: 60px;
     bottom: 40px;
     right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     z-index: 100;
+  }
+
+  .float-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50% !important;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999 !important;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     transition: all 0.3s ease;
-}
-
-.float:hover {
-    transform: scale(1.1);
-    color: #FFF;
-}
-
-.my-float {
+    color: #FFF !important;
     font-size: 30px;
-    margin: 0;
-}
+  }
+
+  .float-btn:hover {
+    transform: scale(1.1);
+    color: #FFF !important;
+  }
+
+  .float-whatsapp {
+    background-color: #25d366 !important;
+  }
+
+  .float-whatsapp:hover {
+    background-color: #1ea952 !important;
+  }
+
+  .float-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+  }
+
+  .float-facebook {
+    background-color: #1877f2 !important;
+  }
+
+  .float-facebook:hover {
+    background-color: #0c5dc7 !important;
+  }
+
+  .float-cart {
+    background-color: #b32f1e !important;
+  }
+
+  .float-cart:hover {
+    background-color: #8a2416 !important;
+  }
   </style>
 
     </footer>
@@ -473,6 +425,26 @@
     <script src="assets/js/bootstrap.bundle.min.js?v=2.0"></script>
     <script src="assets/js/templatemo.js?v=2.0"></script>
     <script src="assets/js/custom.js?v=2.0"></script>
+    
+    <!-- Hamburger Menu Script -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const fullscreenMenu = document.getElementById('fullscreenMenu');
+        
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            fullscreenMenu.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const menuLinks = document.querySelectorAll('.menu-link');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                menuToggle.classList.remove('active');
+                fullscreenMenu.classList.remove('active');
+            });
+        });
+    </script>
     <!-- End Script -->
 </body>
 </html>
