@@ -1,6 +1,132 @@
 /*
-Custom Css
+Custom Css - Nueva Tipografía y Paleta de Colores
 */
+
+/* ========================================
+   TIPOGRAFÍA
+   ======================================== */
+
+/* Títulos - ANTON - Color #b32f1e */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Anton', sans-serif !important;
+    color: #b32f1e !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Párrafos - MONTSERRAT - Color negro */
+body, p, span, a, li, td, th, label, input, textarea, select, button {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #000000;
+}
+
+/* Textos específicos que deben mantener negro */
+.text-dark, .text-black {
+    color: #000000 !important;
+}
+
+/* Textos blancos (para fondos oscuros) */
+.text-light, .text-white {
+    color: #ffffff !important;
+}
+
+/* ========================================
+   PALETA DE COLORES
+   ======================================== */
+
+/* Backgrounds */
+.bg-primary {
+    background-color: #354a61 !important;
+}
+
+.bg-secondary {
+    background-color: #b32f1e !important;
+}
+
+.bg-light {
+    background-color: #fcd0c2 !important;
+}
+
+.bg-dark {
+    background-color: #395038 !important;
+}
+
+.bg-success {
+    background-color: #395038 !important;
+}
+
+/* Text Colors */
+.text-primary {
+    color: #354a61 !important;
+}
+
+.text-secondary {
+    color: #b32f1e !important;
+}
+
+.text-success {
+    color: #395038 !important;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #354a61 !important;
+    border-color: #354a61 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: #2a3b4e !important;
+    border-color: #2a3b4e !important;
+}
+
+.btn-secondary {
+    background-color: #b32f1e !important;
+    border-color: #b32f1e !important;
+    color: #ffffff !important;
+}
+
+.btn-secondary:hover {
+    background-color: #8f2618 !important;
+    border-color: #8f2618 !important;
+}
+
+.btn-success {
+    background-color: #395038 !important;
+    border-color: #395038 !important;
+    color: #ffffff !important;
+}
+
+.btn-success:hover {
+    background-color: #2d3f2c !important;
+    border-color: #2d3f2c !important;
+}
+
+/* Enlaces */
+a {
+    color: #b32f1e;
+}
+
+a:hover {
+    color: #8f2618;
+}
+
+/* Navbar */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: #000000 !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.bg-red {
+    background-color: #b32f1e !important;
+}
+
+/* ========================================
+   EFECTOS ORIGINALES
+   ======================================== */
 
 /* Efectos de brillo para cards */
 .shine {
@@ -56,3 +182,4 @@ Custom Css
     transition: transform 0.3s ease-out;
     will-change: transform;
 }
+

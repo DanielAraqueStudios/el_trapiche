@@ -28,13 +28,13 @@ Table of contents
 
 /*color as a variable*/
 :root {
-  --primary-color: #302783 ;
-  --secondary-color: #E42314; 
-  --light-color: #cfd6e1;
-  --dark-color: #1d242d;
+  --primary-color: #354a61 ;
+  --secondary-color: #b32f1e; 
+  --light-color: #fcd0c2;
+  --dark-color: #395038;
   --black-color: #000;
   --white-color: #fff;
-  --success-color: #59ab6e;
+  --success-color: #395038;
   --warning-color: #ede861;
   --background-opacity: 0.4; /* Controla la opacidad del fondo oscuro (0.0 = transparente, 1.0 = completamente oscuro) */
 }
@@ -43,6 +43,7 @@ Table of contents
 
 /* Background Image with Transparency */
 body {
+  background-color: #dcd0c2;
   background-image: url('../img/fondo.png');
   background-size: cover;
   background-position: center;
@@ -58,7 +59,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, var(--background-opacity)); /* Negro semi-transparente */
+  background-color: rgba(220, 208, 194, var(--background-opacity)); /* Color #dcd0c2 semi-transparente */
   z-index: -1;
   pointer-events: none;
 }
