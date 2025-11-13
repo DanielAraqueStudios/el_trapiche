@@ -85,62 +85,22 @@
     <!-- Close Top Nav -->
 
     
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container d-flex justify-content-between align-items-center">
-    
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
-                <img src="assets/img/logo.png" alt="logo" class="img-fluid" style="max-height: 200px;">
-                
-            </a>
-    
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-                <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.dulceseltrapiche.com/tienda/">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar productos...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/carrito/">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-success text-light">0</span>
-                    </a>
-                    
-                </div>
-            </div>
-    
-        </div>
-    </nav>
-    <!-- Close Header -->
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger-menu" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Fullscreen Navigation Overlay -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <nav class="fullscreen-nav">
+            <a href="nosotros.html" class="menu-link">Nosotros</a>
+            <a href="https://www.dulceseltrapiche.com/tienda/" class="menu-link">Productos</a>
+            <a href="blog.html" class="menu-link">Blog</a>
+            <a href="contacto.html" class="menu-link">Contacto</a>
+        </nav>
+    </div>
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
