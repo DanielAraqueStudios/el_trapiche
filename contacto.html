@@ -55,38 +55,31 @@
 
 <body>
     
-    <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-red navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:servicioalcliente@dulceseltrapiche.com">servicioalcliente@dulceseltrapiche.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:6044442552">(604) 444-2552</a>
-                    <i class="fa fa-mobile mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:3016926792">(301) 692-6792</a>
-                </div>
-                <div>
-                    <a class="text-light" href="https://www.facebook.com/share/15SQSwmcQt/?mibextid=wwXIfr" target="_blank" rel="noopener">
-                        <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
-                    </a>
-                    <a class="text-light" href="https://www.instagram.com/panela_eltrapiche?igsh=MXFrN2dnMmNkajc0dg%3D%3D&utm_source=qr/" target="_blank" rel="noopener">
-                        <i class="fab fa-instagram fa-sm fa-fw me-2"></i>
-                    </a>
-                    <a class="text-light" href="https://wa.me/573016926792" target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp fa-sm fa-fw me-2"></i>
-                    </a>
 
-                </div>
-            </div>
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </nav>
-    <!-- Close Top Nav -->
+        <span class="menu-text">MENÚ</span>
+    </div>
+
+    <!-- Fullscreen Navigation Overlay -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <nav class="fullscreen-nav">
+            <a href="index.html" class="menu-link">Inicio</a>
+            <a href="nosotros.html" class="menu-link">Nosotros</a>
+            <a href="https://www.dulceseltrapiche.com/tienda/" class="menu-link">Productos</a>
+            <a href="blog.html" class="menu-link">Blog</a>
+            <a href="contacto.html" class="menu-link">Contacto</a>
+        </nav>
+    </div>
 
     
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <nav class="navbar navbar-expand-lg navbar-light shadow" style="display: none;">
         <div class="container d-flex justify-content-between align-items-center">
     
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
@@ -159,45 +152,36 @@
     </div>
 
     <!-- Start Content Page -->
-    <div class="container-fluid bg-light py-5">
+    <div class="container-fluid py-5" style="background-color: #dcd0c2;">
         <div class="col-md-6 m-auto text-center">
-            <h1 class="h1">Contáctanos</h1>
-            <p>
+            <h1 class="h1" style="color: #b32f1e; font-family: 'ANTON', sans-serif;">CONTÁCTANOS</h1>
+            <p style="color: #333;">
                 Estamos aquí para atenderte. Encuentra la manera más conveniente de contactarnos.
             </p>
         </div>
     </div>
 
     <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="row text-center">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm animate__animated animate__fadeIn">
-                            <div class="card-body">
-                                <i class="fas fa-map-marker-alt fa-3x text-success mb-3"></i>
-                                <h4 class="h5 mb-3">Visítanos</h4>
-                                <p class="mb-0">Cra. 51 #95A SUR 13</p>
-                                <p>La Estrella, Antioquia</p>
-                                <a href="https://www.google.com/maps/dir//DULCES+EL+TRAPICHE+SAS" class="btn btn-success mt-3 animate__animated animate__pulse" target="_blank">
-                                    <i class="fas fa-directions me-2"></i>Cómo llegar
-                                </a>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row">
+                    <!-- Columna Izquierda - Teléfonos -->
+                    <div class="col-md-6 mb-4">
+                        <div class="contact-section h-100">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-phone fa-4x mb-3" style="color: #6c5a4d;"></i>
+                                <h3 style="color: #6c5a4d; font-family: 'ANTON', sans-serif;">TELÉFONOS</h3>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm animate__animated animate__fadeIn">
-                            <div class="card-body">
-                                <i class="fas fa-phone fa-3x text-success mb-3"></i>
-                                <h4 class="h5 mb-3">Llámanos</h4>
-                                <p class="mb-2">(604) 444-2552</p>
-                                <p>(301) 692-6792</p>
-                                <div class="mt-3">
-                                    <a href="tel:6044442552" class="btn btn-success me-2 animate__animated animate__pulse">
+                            <div class="contact-list">
+                                <div class="contact-item mb-4">
+                                    <p class="mb-2" style="font-size: 24px; font-weight: bold; color: #6c5a4d;">📞 (604) 444-2552</p>
+                                    <a href="tel:6044442552" class="btn btn-dark btn-lg w-100 mb-2">
                                         <i class="fas fa-phone me-2"></i>Llamar
                                     </a>
-                                    <a href="https://wa.me/573016926792" class="btn btn-success" target="_blank">
+                                </div>
+                                <div class="contact-item mb-4">
+                                    <p class="mb-2" style="font-size: 24px; font-weight: bold; color: #6c5a4d;">📱 (301) 692-6792</p>
+                                    <a href="https://wa.me/573016926792" class="btn btn-dark btn-lg w-100" target="_blank">
                                         <i class="fab fa-whatsapp me-2"></i>WhatsApp
                                     </a>
                                 </div>
@@ -205,35 +189,59 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm animate__animated animate__fadeIn">
-                            <div class="card-body">
-                                <i class="fas fa-clock fa-3x text-success mb-3"></i>
-                                <h4 class="h5 mb-3">Horario</h4>
-                                <p class="mb-2">Lunes a Viernes</p>
-                                <p class="mb-3">8:00 AM - 5:00 PM</p>
-                                <p class="mb-2">Sábados</p>
-                                <p>8:00 AM - 1:00 PM</p>
+                    <!-- Columna Derecha - Correos -->
+                    <div class="col-md-6 mb-4">
+                        <div class="contact-section h-100">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-envelope fa-4x mb-3" style="color: #6c5a4d;"></i>
+                                <h3 style="color: #6c5a4d; font-family: 'ANTON', sans-serif;">CORREOS</h3>
+                            </div>
+                            <div class="contact-list">
+                                <div class="contact-item mb-3">
+                                    <p class="mb-2" style="color: #6c5a4d;"><strong>📧 Servicio al Cliente:</strong></p>
+                                    <a href="mailto:servicioalcliente@dulceseltrapiche.com" class="btn btn-outline-dark btn-lg w-100">
+                                        servicioalcliente@dulceseltrapiche.com
+                                    </a>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <p class="mb-2" style="color: #6c5a4d;"><strong>📧 Información:</strong></p>
+                                    <a href="mailto:servicioalcliente@dulceseltrapiche.com" class="btn btn-outline-dark btn-lg w-100">
+                                        servicioalcliente@dulceseltrapiche.com
+                                    </a>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <p class="mb-2" style="color: #6c5a4d;"><strong>📧 Facturación:</strong></p>
+                                    <a href="mailto:Facturacion@dulceseltrapiche.com" class="btn btn-outline-dark btn-lg w-100">
+                                        Facturacion@dulceseltrapiche.com
+                                    </a>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <p class="mb-2" style="color: #6c5a4d;"><strong>📧 Cartera:</strong></p>
+                                    <a href="mailto:Cartera@dulceseltrapiche.com" class="btn btn-outline-dark btn-lg w-100">
+                                        Cartera@dulceseltrapiche.com
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="text-center mt-5">
-                    <h4 class="mb-4">Síguenos en Redes Sociales</h4>
-                    <a href="https://www.facebook.com/share/15SQSwmcQt/?mibextid=wwXIfr" class="btn btn-outline-success mx-2 mb-2 social-btn" target="_blank">
-                        <i class="fab fa-facebook-f me-2"></i>Facebook
-                    </a>
-                    <a href="https://www.instagram.com/panela_eltrapiche?igsh=MXFrN2dnMmNkajc0dg%3D%3D&utm_source=qr/" class="btn btn-outline-success mx-2 mb-2 social-btn" target="_blank">
-                        <i class="fab fa-instagram me-2"></i>Instagram
-                    </a>
-                    <a href="mailto:servicioalcliente@dulceseltrapiche.com" class="btn btn-outline-success mx-2 mb-2">
-                        <i class="fas fa-envelope me-2"></i>Email
-                    </a>
-                </div>
             </div>
         </div>
     </div>
+
+    <style>
+    .contact-section {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact-item {
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+    </style>
 
     <!-- Mapa -->
     <div class="container mb-5">
@@ -256,12 +264,18 @@
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Dulces El Trapiche</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Dirección</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li>
+                        <li style="color: #ffffff;">
                             <i class="fas fa-map-marker-alt fa-fw"></i>
                             Cra. 51 #95A SUR 13, La Estrella, Antioquia
                         </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Teléfonos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
                             <a class="text-decoration-none" href="tel:6044442552">(604) 444-2552</a>
@@ -270,35 +284,29 @@
                             <i class="fa fa-mobile fa-fw"></i>
                             <a class="text-decoration-none" href="tel:3016926792">(301) 692-6792</a>
                         </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Correos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:servicioalcliente@dulceseltrapiche.com">servicioalcliente@dulceseltrapiche.com</a>
+                            <a class="text-decoration-none" href="mailto:servicioalcliente@dulceseltrapiche.com">Servicio al Cliente: servicioalcliente@dulceseltrapiche.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:servicioalcliente@dulceseltrapiche.com">Información: servicioalcliente@dulceseltrapiche.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:Facturacion@dulceseltrapiche.com">Facturación: Facturacion@dulceseltrapiche.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:Cartera@dulceseltrapiche.com">Cartera: Cartera@dulceseltrapiche.com</a>
                         </li>
                     </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Panela Pulverizada</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Dulces Tradicionales</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Panela en Bloque</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Nuevos Productos</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Ofertas Especiales</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Pedidos al Por Mayor</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Información</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="index.html">Inicio</a></li>
-                        <li><a class="text-decoration-none" href="nosotros.html">Nosotros</a></li>
-                        <li><a class="text-decoration-none" href="https://www.dulceseltrapiche.com/tienda/">Productos</a></li>
-                        <li><a class="text-decoration-none" href="blog.html">Blog</a></li>
-                        <li><a class="text-decoration-none" href="contacto.html">Contacto</a></li>
-                    </ul>
-                    
                 </div>
 
             </div>
@@ -307,28 +315,16 @@
                 <div class="col-12 mb-3">
                     <div class="w-100 my-3 border-top border-light"></div>
                 </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/share/15SQSwmcQt/?mibextid=wwXIfr"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/panela_eltrapiche?igsh=MXFrN2dnMmNkajc0dg%3D%3D&utm_source=qr/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://wa.me/573016926792"><i class="fab fa-whatsapp fa-lg fa-fw"></i></a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
             </div>
         </div>
 
         <div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
-                    <div class="col-12">
+                    <div class="col-md-6 text-start">
+                        <img src="assets/img/co-colombia.png" alt="CO Colombia" style="max-width: 120px; opacity: 0.8;">
+                    </div>
+                    <div class="col-md-6">
                         <p class="text-center text-light">
                             Copyright &copy; 2025 Dulces El Trapiche - Todos los derechos reservados
                         </p>
@@ -340,12 +336,102 @@
     </footer>
     <!-- End Footer -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://www.dulceseltrapiche.com/tienda/carrito/" class="float-btn float-cart" target="_blank">
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <a href="https://www.facebook.com/share/15SQSwmcQt/?mibextid=wwXIfr" class="float-btn float-facebook" target="_blank">
+            <i class="fa fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/panela_eltrapiche?igsh=MXFrN2dnMmNkajc0dg%3D%3D&utm_source=qr/" class="float-btn float-instagram" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/573016926792" class="float-btn float-whatsapp" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+  
+    <style>
+    .floating-buttons {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 100;
+    }
+
+    .float-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50% !important;
+        text-align: center;
+        box-shadow: 2px 2px 3px #999 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        color: #FFF !important;
+        font-size: 30px;
+    }
+
+    .float-btn:hover {
+        transform: scale(1.1);
+        color: #FFF !important;
+    }
+
+    .float-whatsapp {
+        background-color: #25d366 !important;
+    }
+
+    .float-whatsapp:hover {
+        background-color: #1ea952 !important;
+    }
+
+    .float-instagram {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+    }
+
+    .float-facebook {
+        background-color: #1877f2 !important;
+    }
+
+    .float-facebook:hover {
+        background-color: #0d65d9 !important;
+    }
+
+    .float-cart {
+        background-color: #b32f1e !important;
+    }
+
+    .float-cart:hover {
+        background-color: #8b2416 !important;
+    }
+    </style>
+
     <!-- Start Script -->
     <script src="assets/js/jquery-1.11.0.min.js?v=2.0"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js?v=2.0"></script>
     <script src="assets/js/bootstrap.bundle.min.js?v=2.0"></script>
     <script src="assets/js/templatemo.js?v=2.0"></script>
     <script src="assets/js/custom.js?v=2.0"></script>
+    <script src="assets/js/animations.js?v=2.0"></script>
+    
+    <script>
+        // Menu toggle functionality
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const fullscreenMenu = document.getElementById('fullscreenMenu');
+
+        hamburgerMenu.addEventListener('click', function() {
+            fullscreenMenu.classList.toggle('active');
+            hamburgerMenu.classList.toggle('active');
+        });
+    </script>
     <!-- End Script -->
 </body>
 
