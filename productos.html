@@ -25,7 +25,7 @@
     <!-- Stylesheet Links -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css?v=2.0">
     <link rel="stylesheet" href="assets/css/templatemo.css?v=2.0">
-    <link rel="stylesheet" href="assets/css/custom.css?v=2.0">
+    <link rel="stylesheet" href="assets/css/custom.css?v=2.1">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700&display=swap">
@@ -55,38 +55,33 @@
 
 <body>
     
-    <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-red navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:servicioalcliente@dulceseltrapiche.com">servicioalcliente@dulceseltrapiche.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:6044442552">(604) 444-2552</a>
-                    <i class="fa fa-mobile mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:3016926792">(301) 692-6792</a>
-                </div>
-                <div>
-                    <a class="text-light" href="https://www.facebook.com/share/15SQSwmcQt/?mibextid=wwXIfr" target="_blank" rel="noopener">
-                        <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
-                    </a>
-                    <a class="text-light" href="https://www.instagram.com/panela_eltrapiche?igsh=MXFrN2dnMmNkajc0dg%3D%3D&utm_source=qr/" target="_blank" rel="noopener">
-                        <i class="fab fa-instagram fa-sm fa-fw me-2"></i>
-                    </a>
-                    <a class="text-light" href="https://wa.me/573016926792" target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp fa-sm fa-fw me-2"></i>
-                    </a>
-                   
-                </div>
-            </div>
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </nav>
-    <!-- Close Top Nav -->
+        <span class="menu-text">MENÚ</span>
+    </div>
 
+    <!-- Header Logo -->
+    <img src="assets/img/logo_final.png" alt="El Trapiche Logo" class="header-logo">
+
+    <!-- Fullscreen Navigation Overlay -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <nav class="fullscreen-nav">
+            <a href="index.html" class="menu-link">Inicio</a>
+            <a href="nosotros.html" class="menu-link">Nosotros</a>
+            <a href="https://www.dulceseltrapiche.com/tienda/" class="menu-link">Productos</a>
+            <a href="blog.html" class="menu-link">Blog</a>
+            <a href="contacto.html" class="menu-link">Contacto</a>
+            <a href="https://drive.google.com/file/d/1Xl9vyzLTkBEoor2ejNnUDgrXXQOR-mXm/view?usp=sharing" class="menu-link" target="_blank">Descarga nuestro catálogo</a>
+        </nav>
+    </div>
     
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <nav class="navbar navbar-expand-lg navbar-light shadow" style="display: none;">
         <div class="container d-flex justify-content-between align-items-center">
     
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
