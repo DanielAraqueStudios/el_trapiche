@@ -57,14 +57,14 @@
     
 
     <!-- Hamburger Menu Button -->
-    <div class="hamburger-menu" id="hamburgerMenu">
+    <button class="hamburger-menu" id="menuToggle">
         <div class="hamburger-icon">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <span class="menu-text">MENÚ</span>
-    </div>
+    </button>
 
     <!-- Header Logo -->
     <img src="assets/img/logo_final.png" alt="El Trapiche Logo" class="header-logo">
@@ -268,6 +268,7 @@
             <div class="row">
 
                 <div class="col-md-4 pt-5">
+                    
                     <h2 class="h2 text-success border-bottom pb-3 border-light logo">Dirección</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li style="color: #ffffff;">
@@ -426,14 +427,23 @@
     <script src="assets/js/custom.js?v=2.0"></script>
     <script src="assets/js/animations.js?v=2.0"></script>
     
+    <!-- Hamburger Menu Script -->
     <script>
-        // Menu toggle functionality
-        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const menuToggle = document.getElementById('menuToggle');
         const fullscreenMenu = document.getElementById('fullscreenMenu');
-
-        hamburgerMenu.addEventListener('click', function() {
+        
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
             fullscreenMenu.classList.toggle('active');
-            hamburgerMenu.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const menuLinks = document.querySelectorAll('.menu-link');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                menuToggle.classList.remove('active');
+                fullscreenMenu.classList.remove('active');
+            });
         });
     </script>
     <!-- End Script -->

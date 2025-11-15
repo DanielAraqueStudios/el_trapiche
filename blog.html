@@ -57,14 +57,14 @@
     
 
     <!-- Hamburger Menu Button -->
-    <div class="hamburger-menu" id="hamburgerMenu">
+    <button class="hamburger-menu" id="menuToggle">
         <div class="hamburger-icon">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <span class="menu-text">MENÚ</span>
-    </div>
+    </button>
 
     <!-- Header Logo -->
     <img src="assets/img/logo_final.png" alt="El Trapiche Logo" class="header-logo">
@@ -239,12 +239,13 @@
    <!-- Start footer -->
 
     
-    <!-- Start Footer -->
+
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
                 <div class="col-md-4 pt-5">
+                    
                     <h2 class="h2 text-success border-bottom pb-3 border-light logo">Dirección</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li style="color: #ffffff;">
@@ -269,7 +270,7 @@
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Correos</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Correo</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
@@ -314,9 +315,8 @@
             </div>
         </div>
 
-    </footer>
-    <!-- End Footer -->
 
+        
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
     <!-- Floating Buttons -->
@@ -335,65 +335,68 @@
         </a>
     </div>
   
-    <style>
-    .floating-buttons {
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        z-index: 100;
-    }
+  <style>
+  .floating-buttons {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+  }
 
-    .float-btn {
-        width: 60px;
-        height: 60px;
-        border-radius: 50% !important;
-        text-align: center;
-        box-shadow: 2px 2px 3px #999 !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        color: #FFF !important;
-        font-size: 30px;
-    }
+  .float-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50% !important;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #FFF !important;
+    font-size: 30px;
+  }
 
-    .float-btn:hover {
-        transform: scale(1.1);
-        color: #FFF !important;
-    }
+  .float-btn:hover {
+    transform: scale(1.1);
+    color: #FFF !important;
+  }
 
-    .float-whatsapp {
-        background-color: #25d366 !important;
-    }
+  .float-whatsapp {
+    background-color: #25d366 !important;
+  }
 
-    .float-whatsapp:hover {
-        background-color: #1ea952 !important;
-    }
+  .float-whatsapp:hover {
+    background-color: #1ea952 !important;
+  }
 
-    .float-instagram {
-        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
-    }
+  .float-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+  }
 
-    .float-facebook {
-        background-color: #1877f2 !important;
-    }
+  .float-facebook {
+    background-color: #1877f2 !important;
+  }
 
-    .float-facebook:hover {
-        background-color: #0d65d9 !important;
-    }
+  .float-facebook:hover {
+    background-color: #0c5dc7 !important;
+  }
 
-    .float-cart {
-        background-color: #b32f1e !important;
-    }
+  .float-cart {
+    background-color: #b32f1e !important;
+  }
 
-    .float-cart:hover {
-        background-color: #8b2416 !important;
-    }
-    </style>
+  .float-cart:hover {
+    background-color: #8a2416 !important;
+  }
+  </style>
+
+    </footer>
+    <!-- End Footer -->
 
     <!-- Start Script -->
     <script src="assets/js/jquery-1.11.0.min.js?v=2.0"></script>
@@ -403,17 +406,25 @@
     <script src="assets/js/custom.js?v=2.0"></script>
     <script src="assets/js/animations.js?v=2.0"></script>
     
+    <!-- Hamburger Menu Script -->
     <script>
-        // Menu toggle functionality
-        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const menuToggle = document.getElementById('menuToggle');
         const fullscreenMenu = document.getElementById('fullscreenMenu');
-
-        hamburgerMenu.addEventListener('click', function() {
+        
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
             fullscreenMenu.classList.toggle('active');
-            hamburgerMenu.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const menuLinks = document.querySelectorAll('.menu-link');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                menuToggle.classList.remove('active');
+                fullscreenMenu.classList.remove('active');
+            });
         });
     </script>
     <!-- End Script -->
 </body>
-
 </html>
