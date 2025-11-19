@@ -175,30 +175,42 @@
     </section>
 
     <!-- SECCIÓN 2: ARTÍCULO 1 (Formulario 2) -->
-    <section class="container-fluid py-5">
-        <article id="articulo1">
-            <div id="articulo1Contenido">
-                <!-- Contenido dinámico del artículo 1 -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <article id="articulo1">
+                    <div id="articulo1Contenido">
+                        <!-- Contenido dinámico del artículo 1 -->
+                    </div>
+                </article>
             </div>
-        </article>
+        </div>
     </section>
 
     <!-- SECCIÓN 3: ARTÍCULO 2 (Formulario 3) -->
-    <section class="container-fluid py-5 bg-light" id="seccionArticulo2" style="display: none;">
-        <article id="articulo2">
-            <div id="articulo2Contenido">
-                <!-- Contenido dinámico del artículo 2 -->
+    <section class="container py-5" id="seccionArticulo2" style="display: none;">
+        <div class="row">
+            <div class="col-12">
+                <article id="articulo2">
+                    <div id="articulo2Contenido">
+                        <!-- Contenido dinámico del artículo 2 -->
+                    </div>
+                </article>
             </div>
-        </article>
+        </div>
     </section>
 
     <!-- SECCIÓN 4: ARTÍCULO 3 (Formulario 4) -->
-    <section class="container-fluid py-5" id="seccionArticulo3" style="display: none;">
-        <article id="articulo3">
-            <div id="articulo3Contenido">
-                <!-- Contenido dinámico del artículo 3 -->
+    <section class="container py-5" id="seccionArticulo3" style="display: none;">
+        <div class="row">
+            <div class="col-12">
+                <article id="articulo3">
+                    <div id="articulo3Contenido">
+                        <!-- Contenido dinámico del artículo 3 -->
+                    </div>
+                </article>
             </div>
-        </article>
+        </div>
     </section>
 
     <!-- Start Contact Section -->
@@ -421,41 +433,71 @@
                 
                 // ARTÍCULO 1 (Formulario 2)
                 if (data.articulo1 && data.articulo1.contenido) {
-                    let html = '';
+                    let html = '<div class="row align-items-start">';
+                    
+                    // Columna izquierda: Título y contenido (col-8)
+                    html += '<div class="col-md-8">';
                     if (data.articulo1.titulo) {
                         html += `<h2 class="text-success mb-4">${data.articulo1.titulo}</h2>`;
                     }
+                    html += '<div>' + data.articulo1.contenido.replace(/\n/g, '<br>') + '</div>';
+                    html += '</div>';
+                    
+                    // Columna derecha: Imagen (col-4)
                     if (data.articulo1.imagen) {
-                        html += `<img src="${data.articulo1.imagen}" alt="Artículo 1" class="img-fluid rounded mb-4">`;
+                        html += '<div class="col-md-4">';
+                        html += `<img src="${data.articulo1.imagen}" alt="Artículo 1" class="img-fluid rounded">`;
+                        html += '</div>';
                     }
-                    html += data.articulo1.contenido.replace(/\n/g, '<br>');
+                    
+                    html += '</div>';
                     document.getElementById('articulo1Contenido').innerHTML = html;
                 }
                 
                 // ARTÍCULO 2 (Formulario 3)
                 if (data.articulo2 && data.articulo2.contenido) {
-                    let html = '';
+                    let html = '<div class="row align-items-start">';
+                    
+                    // Columna izquierda: Imagen (col-4)
+                    if (data.articulo2.imagen) {
+                        html += '<div class="col-md-4">';
+                        html += `<img src="${data.articulo2.imagen}" alt="Artículo 2" class="img-fluid rounded">`;
+                        html += '</div>';
+                    }
+                    
+                    // Columna derecha: Título y contenido (col-8)
+                    html += '<div class="col-md-8">';
                     if (data.articulo2.titulo) {
                         html += `<h2 class="text-success mb-4">${data.articulo2.titulo}</h2>`;
                     }
-                    if (data.articulo2.imagen) {
-                        html += `<img src="${data.articulo2.imagen}" alt="Artículo 2" class="img-fluid rounded mb-4">`;
-                    }
-                    html += data.articulo2.contenido.replace(/\n/g, '<br>');
+                    html += '<div>' + data.articulo2.contenido.replace(/\n/g, '<br>') + '</div>';
+                    html += '</div>';
+                    
+                    html += '</div>';
                     document.getElementById('articulo2Contenido').innerHTML = html;
                     document.getElementById('seccionArticulo2').style.display = 'block';
                 }
                 
                 // ARTÍCULO 3 (Formulario 4)
                 if (data.articulo3 && data.articulo3.contenido) {
-                    let html = '';
+                    let html = '<div class="row align-items-start">';
+                    
+                    // Columna izquierda: Título y contenido (col-8)
+                    html += '<div class="col-md-8">';
                     if (data.articulo3.titulo) {
                         html += `<h2 class="text-success mb-4">${data.articulo3.titulo}</h2>`;
                     }
+                    html += '<div>' + data.articulo3.contenido.replace(/\n/g, '<br>') + '</div>';
+                    html += '</div>';
+                    
+                    // Columna derecha: Imagen (col-4)
                     if (data.articulo3.imagen) {
-                        html += `<img src="${data.articulo3.imagen}" alt="Artículo 3" class="img-fluid rounded mb-4">`;
+                        html += '<div class="col-md-4">';
+                        html += `<img src="${data.articulo3.imagen}" alt="Artículo 3" class="img-fluid rounded">`;
+                        html += '</div>';
                     }
-                    html += data.articulo3.contenido.replace(/\n/g, '<br>');
+                    
+                    html += '</div>';
                     document.getElementById('articulo3Contenido').innerHTML = html;
                     document.getElementById('seccionArticulo3').style.display = 'block';
                 }
