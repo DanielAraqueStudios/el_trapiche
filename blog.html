@@ -435,17 +435,17 @@
                 if (data.articulo1 && data.articulo1.contenido) {
                     let html = '<div class="row align-items-start">';
                     
-                    // Columna izquierda: Título y contenido (col-8)
-                    html += '<div class="col-md-8">';
+                    // Columna izquierda: Título y contenido (col-12 en mobile, col-md-8 en desktop)
+                    html += '<div class="col-12 col-md-8 order-1">';
                     if (data.articulo1.titulo) {
                         html += `<h2 class="text-success mb-4">${data.articulo1.titulo}</h2>`;
                     }
                     html += '<div>' + data.articulo1.contenido.replace(/\n/g, '<br>') + '</div>';
                     html += '</div>';
                     
-                    // Columna derecha: Imagen (col-4)
+                    // Columna derecha: Imagen (col-12 en mobile, col-md-4 en desktop)
                     if (data.articulo1.imagen) {
-                        html += '<div class="col-md-4">';
+                        html += '<div class="col-12 col-md-4 order-2 mb-4">';
                         html += `<img src="${data.articulo1.imagen}" alt="Artículo 1" class="img-fluid rounded">`;
                         html += '</div>';
                     }
@@ -458,15 +458,15 @@
                 if (data.articulo2 && data.articulo2.contenido) {
                     let html = '<div class="row align-items-start">';
                     
-                    // Columna izquierda: Imagen (col-4)
+                    // Columna izquierda: Imagen (col-12 en mobile order-2, col-md-4 en desktop order-1)
                     if (data.articulo2.imagen) {
-                        html += '<div class="col-md-4">';
+                        html += '<div class="col-12 col-md-4 order-2 order-md-1 mb-4">';
                         html += `<img src="${data.articulo2.imagen}" alt="Artículo 2" class="img-fluid rounded">`;
                         html += '</div>';
                     }
                     
-                    // Columna derecha: Título y contenido (col-8)
-                    html += '<div class="col-md-8">';
+                    // Columna derecha: Título y contenido (col-12 en mobile order-1, col-md-8 en desktop order-2)
+                    html += '<div class="col-12 col-md-8 order-1 order-md-2">';
                     if (data.articulo2.titulo) {
                         html += `<h2 class="text-success mb-4">${data.articulo2.titulo}</h2>`;
                     }
@@ -482,17 +482,17 @@
                 if (data.articulo3 && data.articulo3.contenido) {
                     let html = '<div class="row align-items-start">';
                     
-                    // Columna izquierda: Título y contenido (col-8)
-                    html += '<div class="col-md-8">';
+                    // Columna izquierda: Título y contenido (col-12 en mobile, col-md-8 en desktop)
+                    html += '<div class="col-12 col-md-8 order-1">';
                     if (data.articulo3.titulo) {
                         html += `<h2 class="text-success mb-4">${data.articulo3.titulo}</h2>`;
                     }
                     html += '<div>' + data.articulo3.contenido.replace(/\n/g, '<br>') + '</div>';
                     html += '</div>';
                     
-                    // Columna derecha: Imagen (col-4)
+                    // Columna derecha: Imagen (col-12 en mobile, col-md-4 en desktop)
                     if (data.articulo3.imagen) {
-                        html += '<div class="col-md-4">';
+                        html += '<div class="col-12 col-md-4 order-2 mb-4">';
                         html += `<img src="${data.articulo3.imagen}" alt="Artículo 3" class="img-fluid rounded">`;
                         html += '</div>';
                     }
