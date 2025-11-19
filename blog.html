@@ -159,80 +159,46 @@
 
 
 
-    <section class="bg-success py-5">
+    <!-- SECCIÓN 1: HERO VERDE (Formulario 1) -->
+    <section class="bg-success py-5" id="heroSection">
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-8 text-white">
-                    <h1>Los Beneficios de la Panela para tu Salud</h1>
-                    <h2 class="h4 mt-4">El Endulzante Natural que tu Cuerpo Necesita</h2>
+                    <h1 id="heroTitulo">Los Beneficios de la Panela para tu Salud</h1>
+                    <h2 class="h4 mt-4" id="heroSubtitulo">El Endulzante Natural que tu Cuerpo Necesita</h2>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/img/beneficios1.jpg" alt="Beneficios de la Panela" class="img-fluid rounded" style="filter: brightness(0.3);">
+                    <img id="heroImagen" src="assets/img/beneficios1.jpg" alt="Hero" class="img-fluid rounded" style="filter: brightness(0.3);">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container py-5">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <article>
-                    <h2 class="text-success mb-4">¿Por qué la Panela es Superior al Azúcar Refinado?</h2>
-                    <p class="lead">La panela, un tesoro nutricional heredado de nuestros ancestros, está ganando reconocimiento mundial como una alternativa saludable al azúcar refinado. Descubre por qué este endulzante natural debería ser parte de tu dieta diaria.</p>
-                    
-                    <img src="assets/img/new/IMG_2594~2.JPG" alt="Propiedades de la Panela" class="img-fluid rounded my-4">
-                    
-                    <h3 class="mt-5">Riqueza Nutricional Incomparable</h3>
-                    <p>A diferencia del azúcar refinado, que solo aporta calorías vacías, la panela es una verdadera fuente de nutrientes esenciales:</p>
-                    <ul class="mt-3">
-                        <li><strong>Minerales:</strong> Calcio, hierro, magnesio, fósforo y potasio</li>
-                        <li><strong>Vitaminas:</strong> A, B1, B2, B3, B5, B6, D y E</li>
-                        <li><strong>Antioxidantes:</strong> Flavonoides y polifenoles</li>
-                        <li><strong>Proteínas y Aminoácidos esenciales</strong></li>
-                    </ul>
-
-                    <h3 class="mt-5">Beneficios para la Salud</h3>
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <h4 class="h5">1. Energía Natural</h4>
-                            <p>Los carbohidratos complejos de la panela proporcionan energía sostenida, evitando los picos de azúcar en sangre.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="h5">2. Sistema Inmune</h4>
-                            <p>Sus antioxidantes y vitaminas fortalecen las defensas naturales del cuerpo.</p>
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <h4 class="h5">3. Salud Ósea</h4>
-                            <p>El alto contenido de calcio y fósforo contribuye al mantenimiento de huesos y dientes sanos.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="h5">4. Digestión</h4>
-                            <p>Sus enzimas naturales ayudan a mejorar el proceso digestivo.</p>
-                        </div>
-                    </div>
-
-                    <h3 class="mt-5">¿Cómo Incorporar la Panela en tu Dieta?</h3>
-                    <p>La versatilidad de la panela la hace perfecta para:</p>
-                    <ul>
-                        <li>Endulzar bebidas calientes y frías</li>
-                        <li>Preparar postres saludables</li>
-                        <li>Como energizante natural pre-entrenamiento</li>
-                        <li>En smoothies y batidos nutritivos</li>
-                    </ul>
-
-                    <div class="bg-light p-4 mt-5 rounded">
-                        <h4>¿Sabías que?</h4>
-                        <p class="mb-0">La panela tiene un índice glucémico más bajo que el azúcar refinado, lo que significa que su impacto en los niveles de azúcar en sangre es menor, haciéndola más adecuada para personas que controlan su consumo de azúcar.</p>
-                    </div>
-
-                    <h3 class="mt-5">Conclusión</h3>
-                    <p>La panela no es solo un endulzante; es un alimento completo que aporta beneficios significativos a tu salud. Al elegir productos de Dulces El Trapiche, estás optando por una alternativa natural, nutritiva y deliciosa que contribuye a tu bienestar general.</p>
-                </article>
+    <!-- SECCIÓN 2: ARTÍCULO 1 (Formulario 2) -->
+    <section class="container-fluid py-5">
+        <article id="articulo1">
+            <div id="articulo1Contenido">
+                <!-- Contenido dinámico del artículo 1 -->
             </div>
-        </div>
+        </article>
+    </section>
+
+    <!-- SECCIÓN 3: ARTÍCULO 2 (Formulario 3) -->
+    <section class="container-fluid py-5 bg-light" id="seccionArticulo2" style="display: none;">
+        <article id="articulo2">
+            <div id="articulo2Contenido">
+                <!-- Contenido dinámico del artículo 2 -->
+            </div>
+        </article>
+    </section>
+
+    <!-- SECCIÓN 4: ARTÍCULO 3 (Formulario 4) -->
+    <section class="container-fluid py-5" id="seccionArticulo3" style="display: none;">
+        <article id="articulo3">
+            <div id="articulo3Contenido">
+                <!-- Contenido dinámico del artículo 3 -->
+            </div>
+        </article>
     </section>
 
     <!-- Start Contact Section -->
@@ -424,6 +390,83 @@
                 fullscreenMenu.classList.remove('active');
             });
         });
+    </script>
+
+    <!-- Blog Dinámico Script -->
+    <script>
+        // Cargar contenido dinámico del blog desde JSON
+        async function cargarBlogDinamico() {
+            try {
+                const response = await fetch('blog-posts/blog-data.json?t=' + new Date().getTime());
+                
+                if (!response.ok) {
+                    console.log('No hay datos del blog, mostrando contenido predeterminado');
+                    return;
+                }
+                
+                const data = await response.json();
+                
+                // HERO (Formulario 1)
+                if (data.hero) {
+                    if (data.hero.titulo) {
+                        document.getElementById('heroTitulo').textContent = data.hero.titulo;
+                    }
+                    if (data.hero.subtitulo) {
+                        document.getElementById('heroSubtitulo').textContent = data.hero.subtitulo;
+                    }
+                    if (data.hero.imagen) {
+                        document.getElementById('heroImagen').src = data.hero.imagen;
+                    }
+                }
+                
+                // ARTÍCULO 1 (Formulario 2)
+                if (data.articulo1 && data.articulo1.contenido) {
+                    let html = '';
+                    if (data.articulo1.titulo) {
+                        html += `<h2 class="text-success mb-4">${data.articulo1.titulo}</h2>`;
+                    }
+                    if (data.articulo1.imagen) {
+                        html += `<img src="${data.articulo1.imagen}" alt="Artículo 1" class="img-fluid rounded mb-4">`;
+                    }
+                    html += data.articulo1.contenido.replace(/\n/g, '<br>');
+                    document.getElementById('articulo1Contenido').innerHTML = html;
+                }
+                
+                // ARTÍCULO 2 (Formulario 3)
+                if (data.articulo2 && data.articulo2.contenido) {
+                    let html = '';
+                    if (data.articulo2.titulo) {
+                        html += `<h2 class="text-success mb-4">${data.articulo2.titulo}</h2>`;
+                    }
+                    if (data.articulo2.imagen) {
+                        html += `<img src="${data.articulo2.imagen}" alt="Artículo 2" class="img-fluid rounded mb-4">`;
+                    }
+                    html += data.articulo2.contenido.replace(/\n/g, '<br>');
+                    document.getElementById('articulo2Contenido').innerHTML = html;
+                    document.getElementById('seccionArticulo2').style.display = 'block';
+                }
+                
+                // ARTÍCULO 3 (Formulario 4)
+                if (data.articulo3 && data.articulo3.contenido) {
+                    let html = '';
+                    if (data.articulo3.titulo) {
+                        html += `<h2 class="text-success mb-4">${data.articulo3.titulo}</h2>`;
+                    }
+                    if (data.articulo3.imagen) {
+                        html += `<img src="${data.articulo3.imagen}" alt="Artículo 3" class="img-fluid rounded mb-4">`;
+                    }
+                    html += data.articulo3.contenido.replace(/\n/g, '<br>');
+                    document.getElementById('articulo3Contenido').innerHTML = html;
+                    document.getElementById('seccionArticulo3').style.display = 'block';
+                }
+                
+            } catch (error) {
+                console.log('Error al cargar el blog:', error);
+            }
+        }
+
+        // Cargar el blog cuando se carga la página
+        document.addEventListener('DOMContentLoaded', cargarBlogDinamico);
     </script>
     <!-- End Script -->
 </body>
