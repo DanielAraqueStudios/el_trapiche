@@ -98,8 +98,7 @@
     </div>
 
 
-
-    <!-- LAST IMAGES BANNER WROKING 
+        <!-- LAST IMAGES BANNER WROKING 
     <div id="template-mo-zay-hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -126,6 +125,85 @@
         </div>
     </div>
      End Banner Hero -->
+
+
+    <!-- Start Video Banner Hero -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video class="d-block w-100 carousel-fullscreen" autoplay muted loop playsinline>
+                    <source src="./assets/video/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100 carousel-fullscreen" muted loop playsinline>
+                    <source src="./assets/video/video2.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100 carousel-fullscreen" muted loop playsinline>
+                    <source src="./assets/video/video3.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100 carousel-fullscreen" muted loop playsinline>
+                    <source src="./assets/video/video4.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100 carousel-fullscreen" muted loop playsinline>
+                    <source src="./assets/video/video5.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100 carousel-fullscreen" muted loop playsinline>
+                    <source src="./assets/video/video6.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100 carousel-fullscreen" muted loop playsinline>
+                    <source src="./assets/video/video7.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- End Video Banner Hero -->
+
+    <script>
+    // Control video playback on carousel slide
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('#template-mo-zay-hero-carousel');
+        if (carousel) {
+            carousel.addEventListener('slide.bs.carousel', function (e) {
+                // Pause all videos
+                const videos = carousel.querySelectorAll('video');
+                videos.forEach(video => {
+                    video.pause();
+                });
+                
+                // Play the video in the active slide
+                const activeVideo = e.relatedTarget.querySelector('video');
+                if (activeVideo) {
+                    activeVideo.currentTime = 0;
+                    activeVideo.play();
+                }
+            });
+            
+            // Play the first video on page load
+            const firstVideo = carousel.querySelector('.carousel-item.active video');
+            if (firstVideo) {
+                firstVideo.play();
+            }
+        }
+    });
+    </script>
 <!--
 
     
