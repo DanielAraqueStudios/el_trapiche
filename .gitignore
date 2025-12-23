@@ -3,6 +3,16 @@
 v6.zip
 V6.zip
 
+# Archivos de video
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.wmv
+*.flv
+*.webm
+assets/video/
+
 # Archivos de sistema
 .DS_Store
 Thumbs.db
